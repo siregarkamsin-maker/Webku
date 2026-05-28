@@ -1,0 +1,160 @@
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Website Foto</title>
+
+<style>
+
+body{
+    margin:0;
+    font-family:Arial;
+    touch-action: none;
+    background-image:url("layang.jpg");
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+    height:80vh;
+        }
+        
+
+/* HEADER TRANSPARAN */
+header{
+    background: rgba(255,255,255,0.3);
+    backdrop-filter: blur(10px);
+    padding:15px;
+    text-align:center;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    z-index:1000;
+}
+
+
+        /* PEDANG */
+
+    .sword{
+    position:absolute;
+
+    top:40%;
+
+    width:120px;
+    height:20px;
+
+    background:silver;
+
+    border-radius:10px;
+
+    box-shadow:0 0 20px cyan;
+
+    animation:terbang 4s linear infinite;
+}
+
+       /* GAGANG */
+
+    .sword::before{
+
+    content:"";
+
+    position:absolute;
+
+    left:-20px;
+    top:-5px;
+
+    width:20px;
+    height:30px;
+
+    background:brown;
+
+    border-radius:5px;
+}
+
+    /* ANIMASI */
+
+    @keyframes terbang{
+
+    0%{
+        left:-150px;
+        transform:rotate(0deg);
+    }
+
+    50%{
+        transform:rotate(360deg);
+    }
+
+    80%{
+        left:80%;
+        transform:rotate(720deg);
+    }
+}
+
+<
+        
+        /* MENU CARD */
+        .menu {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 15px;
+            padding: 15px;
+        }
+
+        .card {
+            background: white;
+            padding: 20px;
+            text-align: center;
+            border-radius: 15px;
+            box-shadow: 0 0 8px gray;
+            cursor: pointer;
+        }
+
+        .card:hover {
+            background: #e0e0e0;
+        }
+
+        /* FOOTER */
+        .footer {
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            background: gray;
+            text-align: center;
+            padding: 10px;
+            box-shadow: 0 -2px 5px gray;
+        }
+    </style>
+
+</head>
+<body>
+
+<header>
+    🧭 My App Web
+</header>
+
+<div class="sword"></div>
+
+<div class="menu">
+
+    <div class="card" onclick="alert('Menu 1')">
+        🏚️ Home
+    </div>
+
+    <div class="card" onclick="alert('Menu 2')">
+        ☢️ Game
+    </div>
+
+    <div class="card" onclick="alert('Menu 3')">
+        🤑 File
+    </div>
+
+    <div class="card" onclick="alert('Menu 4')">
+        🚰 Setting
+    </div>
+
+
+
+<div class="footer">
+    Mantap bosku💷💷💷
+</div>
+
+</body>
+</html>
