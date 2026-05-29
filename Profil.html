@@ -8,29 +8,45 @@
     body{
       font-family:Arial;
       text-align:center;
-      background-image:url('https://d28clw9klscyzj.cloudfront.net/legacy/assets/2016-01-31/files/1045-4.jpg');
-      margin:0;
-  background-size:cover;
-
-  background-repeat:no-repeat;
-
-  background-position:center;
-
-  height:100vh;
+      background: linear-gradient(to right, #a1c4fd, #c2e9fb);
+      text-align: center;
+      color: white;
+      overflow-x:hidden;
     }
 
     .menu a{
   display:block;
-  background:rgba(255,255,255,0.9);
+  background:rgba(255,255,255,0.3);
   color:black;
   text-decoration:none;
 
-  margin:10px;
+  margin:10px auto;
   padding:15px;
 
   border-radius:10px;
   font-size:20px 
     }
+  .foto img{
+  width:200px;
+  border-radius:15px;
+  opacity:0.6;
+}
+
+/* FOOTER FIXED */
+footer{
+  position:fixed;
+  bottom:0;
+  left:0;
+  width:100%;
+  background:rgba(0,0,0,0.6);
+  color:white;
+  text-align:center;
+  padding:10px;
+  font-size:10px;
+  
+}
+
+
   </style>
 
 </head>
@@ -48,34 +64,15 @@
   <a href="#">📷 Galeri</a>
 
 </div>
-<style>
-h1{
-  color:blue;
-  position:relative;
-  display:block;
-  background:rgba(255,255,255,0.9);
-  animation:gerak 3s infinite;
-}
+<!-- FOTO DI BAWAH MENU -->
+<div class="foto">
 
-/* Animasi */
-@keyframes gerak{
+  <img src="https://fotografi.lovelybogor.com/wp-content/uploads/sites/6/2017/08/apakah-mengedit-foto-adalah-sebuah-tindakan-curang-dalam-fotografi-2.jpg">
 
-  from{
-    left:-200px;
-  }
+  <p style="color:black;">Terima kasih telah mengunjungi website kami
+  selalu dukung kami.</p>
 
-  to{
-    left:100%;
-  }
-
-</style>
-
-</head>
-
-<body>
-
-<h1>🏴‍☠️ MALING PANGSIT</h1>
-</body>
-</html>
+</div>
+<footer>© 2026 Website Saya | Dibuat dengan HTML</footer>
 </body>
 </html>
