@@ -1,161 +1,114 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="UTF-8">
-<title>Website Foto</title>
+  <title>Belajar CSS</title>
 
-<style>
+  <style>
 
-body{
-    margin:0;
-    font-family:Arial;
-    touch-action: none;
-    background-image:url("layang.jpg");
-    background-size:cover;
-    background-position:center;
-    background-repeat:no-repeat;
-    height:80vh;
-        }
-        
-
-/* HEADER TRANSPARAN */
-header{
-    background: rgba(255,255,255,0.3);
-    backdrop-filter: blur(10px);
-    padding:15px;
-    text-align:center;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-
-    z-index:1000;
-}
-
-
-        /* PEDANG */
-
-    .sword{
-    position:absolute;
-
-    top:40%;
-
-    width:120px;
-    height:20px;
-
-    background:silver;
-
-    border-radius:10px;
-
-    box-shadow:0 0 20px cyan;
-
-    animation:terbang 4s linear infinite;
-}
-
-       /* GAGANG */
-
-    .sword::before{
-
-    content:"";
-
-    position:absolute;
-
-    left:-20px;
-    top:-5px;
-
-    width:20px;
-    height:30px;
-
-    background:brown;
-
-    border-radius:5px;
-}
-
-    /* ANIMASI */
-
-    @keyframes terbang{
-
-    0%{
-        left:-150px;
-        transform:rotate(0deg);
+    h1 {
+      color: black;
+      font-family: Arial;
+      font-size: 40px;
     }
 
-    50%{
-        transform:rotate(360deg);
+    p {
+      color: black;
+      font-family: Verdana;
+      font-size: 18px;
     }
-
-    80%{
-        left:80%;
-        transform:rotate(720deg);
-    }
-}
-
-<
-        
-        /* MENU CARD */
-        .menu {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 15px;
-            padding: 15px;
-        }
-
-        .card {
-            background: white;
-            padding: 20px;
-            text-align: center;
-            border-radius: 15px;
-            box-shadow: 0 0 8px gray;
-            cursor: pointer;
-        }
-
-        .card:hover {
-            background: #e0e0e0;
-        }
-
-        /* FOOTER */
-        .footer {
-            position: fixed;
-            bottom: 0;
-            width: 100%;
-            background: gray;
-            text-align: center;
-            padding: 10px;
-            box-shadow: 0 -2px 5px gray;
-        }
-    </style>
+  </style>
 
 </head>
+
+
+  <h1>Mobil Rindu📓</h1>
+  <p>hay teman-teman ini website pertama saya</p>
+<a href="Profil.html" class="btn1">>
+  Klik Saya</a><br><br>
+
+<style>
+.btn1{
+  display:inline-block;
+  padding:12px 20px;
+  background-color:white;
+  color:black;
+  text-decoration:none;
+  border-radius:10px;
+  font-size:18px;
+}
+</style>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial;
+      background: linear-gradient(to right, #4facfe, #00f2fe);
+      text-align: center;
+      color: white;
+    }
+
+    .card {
+      background: rgba(0,0,0,0.3);
+      width: 80%;
+      margin: 50px auto;
+      padding: 20px;
+      border-radius: 20px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    }
+
+    img {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      border: 3px solid white;
+    }
+
+    h2 {
+      margin: 10px 0;
+      font-size: 30px;
+    }
+
+    p2 {
+      font-size: 16px;
+    }
+
+    .btn {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 12px 25px;
+  background-color: #25D366;
+  color: white;
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+    }
+  </style>
+
+</head>
+
 <body>
 
-<header>
-    🧭 My App Web
-</header>
+  <div class="card">
 
-<div class="sword"></div>
+    <img src=" https://cdn.pixabay.com/photo/2024/01/03/19/37/photography-8486085_1280.jpg" alt="Foto Profil">
 
-<div class="menu">
+    <h2>sangsang simajuntak</h2>
 
-    <div class="card" onclick="alert('Menu 1')">
-        🏚️ Home
-    </div>
+    <p2>Pelajar | Pemula Coding | Suka Ngoding di HP</p2>
 
-    <div class="card" onclick="alert('Menu 2')">
-        ☢️ Game
-    </div>
+    <p2>
+      Halo! Saya sedang belajar HTML, CSS, dan JavaScript di HP Android.
+      Ini adalah website profil pertama saya 🚀
+    </p2>
 
-    <div class="card" onclick="alert('Menu 3')">
-        🤑 File
-    </div>
+    <a class="btn" href="https://wa.me/6285893188668" target="_blank">
+  hubugi Saya
+</a>
 
-    <div class="card" onclick="alert('Menu 4')">
-        🚰 Setting
-    </div>
-
-
-
-<div class="footer">
-    Mantap bosku💷💷💷
-</div>
+  </div>
 
 </body>
 </html>
